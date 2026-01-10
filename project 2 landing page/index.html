@@ -1,62 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Generic Landing Page</title>
-        <meta name="description" content="This is a generic landing page template.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <img id="header-logo" src="" alt="Header Logo">
-                <a id="header-link1" class="header-link" href="#">header link one</a>
-                <a id="header-link2" class="header-link" href="#">header link two</a>
-                <a id="header-link3" class="header-link" href="#">header link three</a>
-            </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Generic Landing Page</title>
 
-            <div id="s1">
-                <div id="s1-text">
-                <h1>This website is awesome</h1>
-                <br>
-                <p>This website has some subtext goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-                <br>
-                <button>Sign Up</button>
-                </div>
-                <div id="s1-image">
-                <img src="" alt="This a placeholder for an image">
-                </div>
-            </div>
+  <meta name="description" content="A clean and modern generic landing page template." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            <div id="s2">
-                <h2>Some random information.</h2>
-                <div class="box" id="box1"><p>This is some subtext under the illustration or image</p></div>
-                <div class="box" id="box2"><p>This is some subtext under the illustration or image</p></div>
-                <div class="box" id="box3"><p>This is some subtext under the illustration or image</p></div>
-                <div class="box" id="box4"><p>This is some subtext under the illustration or image</p></div>
-            </div>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 
-            <div id="s3">
-                <em>This is an inspirational quote or a testimonial from a client. Maybe it's just filling up space or maybe people will actually read it. Who know? All I know is that it looks nice.</em>
+  <!-- Optional: Improve font rendering -->
+  <meta name="color-scheme" content="light dark">
+</head>
 
-                <p id="thor">-Thor, God of Thunder</p>
-            </div>
+<body>
+  <main>
 
-            <div id="s4">
-                <div id="signup">
-                    <h2>Call to action! It's time!</h2>
-                    <p>sign up for our product by checking that button right over there!</p>
-                    <button>Sign Up</button>
-                </div>
-            </div>
+    <!-- ================= HEADER / NAV ================= -->
+    <header>
+      <nav aria-label="Main navigation">
+        <img
+          id="header-logo"
+          src=""
+          alt="Company logo"
+        />
 
-            <footer className="footer">
-                <p>© 2024 Generic Landing Page, Ruhul projects</p>
-            </footer>
-        </main>
+        <ul class="nav-links">
+          <li><a href="#">Header link one</a></li>
+          <li><a href="#">Header link two</a></li>
+          <li><a href="#">Header link three</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <script src="" async defer></script>
-    </body>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="s1" aria-labelledby="hero-title">
+      <div id="s1-text">
+        <h1 id="hero-title">This website is awesome</h1>
+
+        <p>
+          This website has some subtext that goes here under the main title.
+          It's a smaller font and the color is lower contrast.
+        </p>
+
+        <button type="button">Sign up</button>
+      </div>
+
+      <figure id="s1-image">
+        <img
+          src=""
+          alt="Illustration representing the product"
+        />
+      </figure>
+    </section>
+
+    <!-- ================= INFO SECTION ================= -->
+    <section id="s2" aria-labelledby="info-title">
+      <h2 id="info-title">Some random information.</h2>
+
+      <div class="info-grid">
+        <div class="box">
+          <p>This is some subtext under the illustration or image.</p>
+        </div>
+        <div class="box">
+          <p>This is some subtext under the illustration or image.</p>
+        </div>
+        <div class="box">
+          <p>This is some subtext under the illustration or image.</p>
+        </div>
+        <div class="box">
+          <p>This is some subtext under the illustration or image.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUOTE SECTION ================= -->
+    <section id="s3" aria-labelledby="quote-author">
+      <blockquote>
+        <p>
+          This is an inspirational quote or a testimonial from a client.
+          Maybe it's just filling up space, or maybe people will actually read it.
+          Who knows? All I know is that it looks nice.
+        </p>
+      </blockquote>
+
+      <p id="quote-author"><strong>— Thor, God of Thunder</strong></p>
+    </section>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section id="s4">
+      <div id="signup" role="region" aria-labelledby="cta-title">
+        <div>
+          <h2 id="cta-title">Call to action! It's time!</h2>
+          <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+
+        <button type="button">Sign up</button>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <p>© 2024 Generic Landing Page · Ruhul Projects</p>
+    </footer>
+
+  </main>
+
+  <!-- Scripts -->
+  <!-- Place scripts at the end for performance -->
+  <script src="" defer></script>
+</body>
 </html>
