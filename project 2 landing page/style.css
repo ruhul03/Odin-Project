@@ -55,7 +55,7 @@ nav {
 /* ================= HERO ================= */
 
 #s1 {
-    max-width: 1200px;
+    max-width: 1521px;
     margin: auto;
     padding: 80px 20px;
     display: flex;
@@ -67,6 +67,7 @@ nav {
 
 #s1-text {
     max-width: 500px;
+    text-align: center;
 }
 
 #s1-text h1 {
@@ -95,7 +96,7 @@ nav {
     background-color: #2563eb;
 }
 
-#s1-image img {
+#s1-image {
     width: 100%;
     max-width: 500px;
     border-radius: 8px;
