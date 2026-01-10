@@ -30,27 +30,27 @@ header {
 
 
 #s1 {
-    height: ;
+    height: 150px;
     background-color: #1f2937;
 }
 
 #s2 {
-    height: ;
+    height: 150px;
     background-color: white;
 }
     
 #s3 {
-    height: ;
+    height: 150px;
     background-color: #e5e7eb;
 }
 
 #s4 {
-    height: ;
+    height: 150px;
     background-color: white;
 }
 
 footer {
-    height: 60px;
+    height: 32px;
     background-color: #111827;
 }
 
