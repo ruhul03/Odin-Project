@@ -19,8 +19,9 @@ header {
     line-height: 40px;
     padding: 0 5px;
     display: inline-block;
-
+    float: right;
 }
+
 
 #header-logo {
     height: 40px;
@@ -38,19 +39,19 @@ header {
     height: 150px;
     background-color: white;
 }
-    
+
 #s3 {
     height: 150px;
     background-color: #e5e7eb;
 }
 
 #s4 {
-    height: 150px;
+    height: 155px;
     background-color: white;
 }
 
 footer {
-    height: 32px;
+    height: 33px;
     background-color: #111827;
 }
 
