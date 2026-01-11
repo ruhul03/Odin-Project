@@ -1,0 +1,73 @@
+*{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+button{
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#Youtube{
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#Youtube:hover{
+    background-color: #CC0000;
+}
+
+#Facebook{
+    background-color: #3B5998;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#Facebook:hover{
+    background-color: #2D4373;
+}
+
+#Twitter{
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#Twitter:hover{
+    background-color: #0D8BD9;
+}
+
+#Instagram{
+    background-color: #E4405F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#Instagram:hover{
+    background-color: #CC334D;
+}
