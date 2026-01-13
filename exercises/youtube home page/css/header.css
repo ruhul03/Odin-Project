@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -16,6 +9,7 @@
     z-index: 1000;
     padding: 0 20px;
 }
+
 
 .left-section {
     display: flex;
@@ -38,6 +32,7 @@
     flex: 1;
     justify-content: center;
     align-items: center;
+    
 }
 
 #search-input {
@@ -47,8 +42,8 @@
     border-radius: 20px;
     padding-left: 10px;
     font-size: 14px;
-    outline: none;
-    
+    display: flex;
+    flex-shrink: 50;
 }
 
 #search-button {
