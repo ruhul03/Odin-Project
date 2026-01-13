@@ -1,70 +1,82 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: rgba(241, 241, 241, 0.95);
-    border-bottom: 1px solid lightgray;
-    position: relative;
-    z-index: 1000;
-    padding: 0 20px;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 100;
 }
 
-
+/* LEFT */
 .left-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 16px;
 }
 
 #menu-icon {
-    height: 15px;
-    margin: 10px;
+    width: 24px;
+    cursor: pointer;
 }
 
 #YT-logo {
-    height:25px;
-    margin: 10px;
+    height: 20px;
+    cursor: pointer;
 }
 
+/* MIDDLE */
 .middle-section {
     display: flex;
-    flex: 1;
-    justify-content: center;
     align-items: center;
-    
+    flex: 1;
+    max-width: 600px;
+    margin: 0 24px;
 }
 
 #search-input {
-    width: 600px;
-    height: 40px;
-    border: 1px solid gray;
-    border-radius: 20px;
-    padding-left: 10px;
-    font-size: 14px;
-    display: flex;
-    flex-shrink: 50;
+    flex: 1;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #1c62b9;
 }
 
 #search-button {
-    height: 34px;
-    border: 1px solid gray;
-    border-radius: 15px;
-    margin-left: 5px;
-    padding: 0 15px;
-    background-color: white;
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f8f8f8;
     cursor: pointer;
 }
 
+#search-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* RIGHT */
 .right-section {
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
-#upload-icon, #apps-icon, #notifications-icon, #profile-pic {
-    height: 25px;
-    margin: 0 10px;
+.right-section img {
+    width: 24px;
     cursor: pointer;
-    flex-shrink: 0;
 }
 
+#profile-pic {
+    width: 32px;
+}

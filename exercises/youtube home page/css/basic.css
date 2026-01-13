@@ -1,5 +1,21 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #0f0f0f;
+}
+
+/* Main content area */
+.main {
+    padding: 90px 24px 24px;
+    /* space for fixed header */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
 }
