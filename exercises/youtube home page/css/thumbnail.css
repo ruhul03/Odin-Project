@@ -1,5 +1,37 @@
 .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 10px;
 }
+
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.video-info {
+    display: flex;
+    margin-top: 8px;
+}
+
+.channel-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.video-details {
+    flex: 1;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: auto;
+    margin-bottom: 4px;
+}
+
+
