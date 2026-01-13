@@ -9,22 +9,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+    background-color: rgba(241, 241, 241, 0.95);
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    z-index: 1000;
+    padding: 0 20px;
 }
 
 .left-section {
-    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-icon {
+    height: 15px;
+    margin: 10px;
+}
+
+#YT-logo {
+    height:25px;
+    margin: 10px;
 }
 
 .middle-section {
-    background-color: lightgreen;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    width: 600px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    outline: none;
+    
+}
+
+#search-button {
+    height: 34px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-left: 5px;
+    padding: 0 15px;
+    background-color: white;
+    cursor: pointer;
 }
 
 .right-section {
-    background-color: lightcoral;
+    display: flex;
+    align-items: center;
 }
 
+#upload-icon, #apps-icon, #notifications-icon, #profile-pic {
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
 
-
-
-
-.
