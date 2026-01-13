@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    background-color: lightblue;
+}
+
+.middle-section {
+    background-color: lightgreen;
+}
+
+.right-section {
+    background-color: lightcoral;
+}
+
+
+
+
+
+.
