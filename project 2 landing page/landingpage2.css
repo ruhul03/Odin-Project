@@ -5,6 +5,8 @@
     font-family: Arial, sans-serif;
 }
 
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -21,7 +23,33 @@
     height: 50px;
 
 }
+.logo {
+    font-size: 12px;
+    font-weight: normal;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    border-radius: 50%;
+}
 
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 .hero {
     background-color: #4CAF50;
