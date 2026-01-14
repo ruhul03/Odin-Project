@@ -102,10 +102,20 @@
 
 
 .quote {
-    background-color: aqua;
+    background-color: rgb(64, 121, 121);
     font-style: italic;
-    margin: 20px;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.quote p {
+    font-size: 14px;
+    margin: 0px;
+    margin-left: 250px;
+
 }
 
 .contact {
