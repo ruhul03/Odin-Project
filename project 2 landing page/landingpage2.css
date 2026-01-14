@@ -52,11 +52,27 @@
 }
 
 .hero {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #aed9af;
+    color: rgb(0, 0, 0);
     height: 100vh;
     padding: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.hero img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 600px;
 }
 
 .features {
