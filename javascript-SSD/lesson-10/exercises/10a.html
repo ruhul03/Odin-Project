@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buttons</title>
+
+    <style>
+      #cart {
+        background-color: rgb(255, 216, 20);
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+
+      .uber {
+        margin-top: 20px;
+      }
+
+      #request {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 8px;
+      }
+
+      #schedule {
+        background-color: rgb(209, 209, 209);
+        color: black;
+        border: none;
+        margin-left: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 8px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <button id="cart">Add to Cart</button>
+    <div class="uber">
+      <button id="request">Request Uber</button>
+      <button id="schedule">Schedule for Later</button>
+    </div>
+
+    <script>
+      const cartButton = document.getElementById("cart");
+      cartButton.onclick = function () {
+        alert("Item added to cart!");
+      };
+      cartButton.onclick = function () {
+        // Disable the button and update its text
+        cartButton.disabled = true;
+        cartButton.textContent = "Added to cart!";
+        cartButton.style.backgroundColor = "#bfbfbf";
+        cartButton.style.cursor = "not-allowed";
+
+        // Re-enable the button after 2 seconds
+        setTimeout(function () {
+          cartButton.disabled = false;
+          cartButton.textContent = "Add to Cart";
+          cartButton.style.backgroundColor = "rgb(255, 216, 20)";
+          cartButton.style.cursor = "pointer";
+        }, 2000);
+      };
+
+      const requestButton = document.getElementById("request");
+      requestButton.onclick = function () {
+        alert("Uber requested!");
+      };
+
+      const scheduleButton = document.getElementById("schedule");
+      scheduleButton.onclick = function () {
+        alert("Uber scheduled for later!");
+      };
+    </script>
+  </body>
+</html>
