@@ -1,13 +1,13 @@
 :root {
-  --bg-color: #0f172a;
-  --calc-bg: rgba(30, 41, 59, 0.7);
-  --btn-bg: rgba(51, 65, 85, 0.5);
-  --btn-hover: rgba(71, 85, 105, 0.8);
-  --accent-color: #38bdf8;
-  --accent-hover: #0ea5e9;
-  --op-color: #fb923c;
-  --text-main: #f8fafc;
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --bg-color: #bc2828;
+  --calc-bg: rgba(19, 43, 8, 0.184);
+  --btn-bg: rgba(56, 47, 47, 0.5);
+  --btn-hover: rgba(5, 31, 67, 0.8);
+  --accent-color: #61b9de;
+  --accent-hover: #326278;
+  --op-color: #ed730f;
+  --text-main: #f7f7f7;
+  --glass-border: rgba(224, 160, 160, 0.49);
 }
 
 * {
