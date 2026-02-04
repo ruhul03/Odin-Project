@@ -1,0 +1,110 @@
+:root {
+  --bg-color: #0f172a;
+  --calc-bg: rgba(30, 41, 59, 0.7);
+  --btn-bg: rgba(51, 65, 85, 0.5);
+  --btn-hover: rgba(71, 85, 105, 0.8);
+  --accent-color: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --op-color: #fb923c;
+  --text-main: #f8fafc;
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  color: var(--text-main);
+}
+
+.calculator {
+  background: var(--calc-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  width: 320px;
+}
+
+.display {
+  width: 100%;
+  height: 70px;
+  font-size: 32px;
+  text-align: right;
+  padding: 15px;
+  border: none;
+  background: rgba(15, 23, 42, 0.5);
+  color: var(--text-main);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  outline: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--btn-bg);
+  color: var(--text-main);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+button:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Operator Buttons */
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+  color: var(--op-color);
+}
+
+/* Clear Button */
+button:nth-child(1) {
+  color: #ef4444;
+}
+
+/* Equals Button */
+button:last-child {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+button:last-child:hover {
+  background: var(--accent-hover);
+}
