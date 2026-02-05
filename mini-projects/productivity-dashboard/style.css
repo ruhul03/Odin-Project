@@ -1,0 +1,33 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* Makes 1rem = 10px, for easier responsive sizing */
+  line-height: 1.15;
+  /* Improves text readability */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents text inflation on mobile */
+}
+
+body {
+  font-size: 1.6rem;
+  /* Sets base font size to 16px */
+  margin: 0;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  background-color: #0b220c14;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+}
