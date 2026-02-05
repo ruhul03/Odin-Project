@@ -87,5 +87,20 @@ button:active {
   border: none;
   border-radius: 8rem;
   font-size: larger;
-  
+  position: fixed;
+  bottom: 20px;
+  /* Distance from bottom */
+  right: 20px;
+  /* Distance from right */
+  z-index: 1000;
+  /* Ensures it stays on top of other elements */
+  cursor: pointer;
+}
+
+#createButton:hover {
+  background-color: #7777e6;
+}
+
+#createButton:active {
+  background-color: #9999e6;
 }
